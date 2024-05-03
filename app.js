@@ -56,9 +56,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: 'http://localhost:5173', // Укажите ваш домен, с которого идут запросы
+    origin: ['http://localhost:5173', 'https://studyitstep.netlify.app'],
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
-    credentials: true // Если ваше приложение использует куки или аутентификацию через заголовки, это должно быть true
+    credentials: true
 }
 
 
