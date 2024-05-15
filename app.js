@@ -56,7 +56,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsOptions = {
-    origin: ['http://localhost:5173', 'https://studyitstep.netlify.app'],
+    origin: ['http://localhost:5173', 'https://studyitstep.netlify.app', 'http://192.168.0.105:5173'],
     methods: ['GET', 'POST', 'DELETE', 'UPDATE', 'PUT', 'PATCH'],
     credentials: true
 }
